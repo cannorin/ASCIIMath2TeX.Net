@@ -5,3 +5,4 @@ This is a direct port of [the official PHP implementation of the ASCIIMath2TeX c
 
 Please refer to the original source code for details.
 
+[Install via NuGet](https://www.nuget.org/packages/ASCIIMath2TeX.Net/)
