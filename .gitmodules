@@ -1,0 +1,3 @@
+[submodule "asciimathml"]
+	path = asciimathml
+	url = https://github.com/asciimath/asciimathml

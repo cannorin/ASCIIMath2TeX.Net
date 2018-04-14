@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>netstandard1.6;net46</TargetFrameworks>
+    <Description>ASCIIMath to TeX converter, port of the official PHP implementation using the Peachpie compiler</Description>
+    <AssemblyName>ASCIIMath2TeX.Net</AssemblyName>
+    <PackageId>ASCIIMath2TeX.Net</PackageId>
+    <Authors>cannorin</Authors>
+    <Copyright>2006 (c) David Lippman, 2018 (c) cannorin</Copyright>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/cannorin/ASCIIMath2Tex.Net</PackageProjectUrl>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <VersionSuffix>prerelease</VersionSuffix><!-- we specify version suffix to make this package a pre-release version - this is mandatory since we still have a pre-release versions of dependencies -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="asciimathml/asciimath-based/ASCIIMath2TeX.php" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Peachpie.Compiler.Tools" Version="0.9.0-*" />
+    <PackageReference Include="Peachpie.NET.Sdk" Version="0.9.0-*" PrivateAssets="Build" />
+  </ItemGroup>
+</Project>
