@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/0.9.11">
+<Project Sdk="Peachpie.NET.Sdk/0.9.910">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
@@ -10,6 +10,7 @@
     <Authors>cannorin</Authors>
     <Copyright>2006 (c) David Lippman, 2018 (c) cannorin</Copyright>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/cannorin/ASCIIMath2Tex.Net</PackageProjectUrl>
     <PackageReleaseNotes>Update dependency.</PackageReleaseNotes>
