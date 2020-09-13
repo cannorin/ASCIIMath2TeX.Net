@@ -6,3 +6,19 @@ This is a direct port of [the official PHP implementation of the ASCIIMath2TeX c
 Please refer to the original source code for details.
 
 [Install via NuGet](https://www.nuget.org/packages/ASCIIMath2TeX.Net/)
+
+## Example
+
+F# example (from https://github.com/cannorin/FsNote)
+
+```f#
+let am2tex (code: string) =
+  let am2t = new AMtoTeX()
+  am2t.convert(PhpValue.Create(code)).ToString()
+```
+
+C# example:
+```c#
+var am2t = new AMtoTeX();
+Console.Write(am2t.convert("3^f-4").ToString());
+```
