@@ -14,10 +14,12 @@
     <PackageLicense>MIT</PackageLicense>
     <PackageProjectUrl>https://github.com/cannorin/ASCIIMath2Tex.Net</PackageProjectUrl>
     <PackageReleaseNotes>Update dependency.</PackageReleaseNotes>
+    <PackageIcon>assets/icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="asciimathml/asciimath-based/ASCIIMath2TeX.php" />
     <None Include="README.md" Pack="true" PackagePath="assets/readme.md" />
+    <None Include="ASCIIMath2TeX.png" Pack="true" PackagePath="$(PackageIcon)" />
   </ItemGroup>
 </Project>
